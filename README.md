@@ -7,3 +7,4 @@ Sotar2 is the second version of the original bot 'Sotar'. It is based off Univer
 
 # Command list
 
+Sotar2 has many simple but useful commands. Here is a list of some of them
