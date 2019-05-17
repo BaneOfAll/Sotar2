@@ -117,7 +117,7 @@ senpai: function(target, room, user) {
 		this.reply(target);
 	},
 	git: function () {
-		this.replyPM(`https://github.com/BaneOfAll/UmbreonBot`);
+		this.replyPM(`https://github.com/BaneOfAll/Sotar2`);
 	},
 	help: function () {
 		this.replyPM(`PM Zeru`);
