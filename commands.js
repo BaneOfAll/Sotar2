@@ -91,10 +91,10 @@ senpai: function(target, room, user) {
 		this.reply('ima kitty =^.^= mew :3');
 	},
 	cry: 'cri',
-	cri: function(arg, by, room, con) {
-		if (!this.canUse('cri', by) || room.charAt(0) === ',') return false;
-		this.say(con, room, 'Don\'t worry, it will be okay^~^');
-		this.say(con, room, '/me hugs ' + by + ' gently');
+	cri: function(target, room, user) {
+		
+		this.reply('Don\'t worry, it will be okay^~^');
+		this.reply('/me hugs ' + user + ' gently');
 	},
 
 	js: 'eval',
@@ -116,11 +116,15 @@ senpai: function(target, room, user) {
 		if (!this.can('eval') || !target) return;
 		this.reply(target);
 	},
+  pm: function(target, room, user) {
+    if (!this.can('eval') || !target) return;
+    this.reply('/msg ' + target)
+  },
 	git: function () {
-		this.replyPM(`https://github.com/BaneOfAll/UmbreonBot`);
+		this.reply(`https://github.com/BaneOfAll/Sotar2`);
 	},
 	help: function () {
-		this.replyPM(`PM Zeru`);
+		this.reply(`https://github.com/BaneOfAll/Sotar2/blob/master/README.md **WARNING**: the guide is not yet finished. My command character is -`);
 	},
 	hotpatch: function (target) {
 		if (!this.can('eval')) return;
@@ -182,53 +186,46 @@ senpai: function(target, room, user) {
         break;
     }
   },
-   
-  ag: function (target, room, user) {
-    if (!this.can('games')) return;
-    this.reply("/tour new [Gen 7] 1v1, roundrobin")
-     this.reply("/tour rules ")
-     this.reply("/tour name AG 1v1")
-     this.reply("/tour autostart 3")
-    this.reply("/tour autodq 2")
-  },
-  stab: function (target, room, user) {
-    this.reply("/tour new [Gen 7] 1v1, elim")
-     this.reply("/tour rules -tapu lele, -spore")
-    this.reply("/tour autostart 3")
-    this.reply("/tour autodq 2")
-    this.reply("/tour name STABmons 1v1")
-  },
-   aaa: function (target, room, user) {
-    if (!this.can('games')) return;
-    this.reply("/tour new [Gen 7] 1v1, elim")
-     this.reply("/tour rules -keldeo, -kartana, -kyurem-black, -weavile, -zygarde, -archeops, -dragonite, -hoopa-unbound, -shedninja, -slaking, -regigigas, -terrakion Ability Clause, Ignore Illegal Abilities")    
-     this.reply("/tour name AAA 1v1")
-     this.reply("/tour autostart 3")
-    this.reply("/tour autodq 2")
-  },
-  inverse: function (target, room, user) {
-    if (!this.can('games')) return;
-    this.reply("/tour new [Gen 7] 1v1, elim")
-     this.reply("/tour rules Inverse Mod, -Porygon-Z")     
-    this.reply("/tour name Inverse 1v1")
-    this.reply("/tour autostart 3")
-    this.reply("/tour autodq 2")
-  },
-  "2v2": function (target, room, user) {
-    if (!this.can('games')) return;
-    this.reply("/tour new [Gen 7] 2v2doubles, elim")
-    this.reply("/tour name 2v2 Doubles")
-    this.reply("/tour autostart 3")
-    this.reply("/tour autodq 2")
-  },
-  mono: function (target, room, user) {
-    if (!this.can('games')) return;
-    this.reply("/tour new [Gen 7] 1v1, elim")
-     this.reply("/tour rules Same Type Clause, -Necrozma")     
-    this.reply("/tour name Monotype 1v1")
-    this.reply("/tour autostart 3")
-    this.reply("/tour autodq 2")
-  },
+  
+  tour: 'tournament',
+	tournament: function (target, room, user) {
+		if (room instanceof Users.User || !Config.tournaments || !Config.tournaments.includes(room.id)) return;
+		if (!target) {
+			if (!user.hasRank(room, '+')) return;
+			if (!room.tour) return this.say("I am not currently tracking a tournament in this room.");
+			let info = "``" + room.tour.name + " tournament info``";
+			if (room.tour.startTime) {
+				return this.say(info + ": **Time**: " + Tools.toDurationString(Date.now() - room.tour.startTime) + " | **Remaining players**: " + room.tour.getRemainingPlayerCount() + '/' + room.tour.totalPlayers);
+			} else if (room.tour.started) {
+				return this.say(info + ": **Remaining players**: " + room.tour.getRemainingPlayerCount() + '/' + room.tour.totalPlayers);
+			} else {
+				return this.say(info + ": " + room.tour.playerCount + " player" + (room.tour.playerCount > 1 ? "s" : ""));
+			}
+		} else {
+			if (!user.hasRank(room, '%')) return;
+			let targets = target.split(',');
+			let cmd = Tools.toId(targets[0]);
+			let format;
+			switch (cmd) {
+			case 'end':
+				this.reply("/tour end");
+				break;
+			case 'start':
+				this.reply("/tour start");
+				break;
+			default:
+				format = Tools.getFormat(cmd);
+				if (!format) return this.reply('**Error:** invalid format.');
+				if (!format.playable) return this.reply(format.name + " cannot be played, please choose another format.");
+				let cap;
+				if (targets[1]) {
+					cap = parseInt(Tools.toId(targets[1]));
+					if (cap < 2 || cap > Tournaments.maxCap || isNaN(cap)) return this.reply("**Error:** invalid participant cap.");
+				}
+				this.reply("/tour new " + format.id + ", elimination, " + (cap ? cap + ", " : "") + (targets.length > 2 ? ", " + targets.slice(2).join(", ") : ""));
+			}
+		}
+	},
   pokemon: function (target) {
   if (!this.can('pokemon')) return;
     this.reply("/addhtmlbox " + "<center><img src=\"https://play.pokemonshowdown.com/sprites/xyani/" + target + ".gif\" height=\"0\" width=\"0\" style=\"width:auto;height:auto\"><img src=\"https://play.pokemonshowdown.com/sprites/xyani-back/" + target + ".gif\" height=\"0\" width=\"0\" style=\"width:auto;height:auto\"><img src=\"https://play.pokemonshowdown.com/sprites/xyani-shiny/" + target + ".gif\" height=\"0\" width=\"0\" style=\"width:auto;height:auto\"><img src=\"https://play.pokemonshowdown.com/sprites/xyani-back-shiny/" + target + ".gif\" height=\"0\" width=\"0\" style=\"width:auto;height:auto\"><br><br><a href=\"https://bulbapedia.bulbagarden.net/wiki/" + target + "_(Pok%C3%A9mon)\">Bulbapedia page</a><br><br><a href=\"https://www.smogon.com/dex/sm/pokemon/" + target + "/\">Smogon Analysis</a><br><br><a href=\"https://www.pokemon.com/us/pokedex/" + target + ">More Info</a></center>")
