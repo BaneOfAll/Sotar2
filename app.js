@@ -31,6 +31,7 @@ try {
 }
 
 // Setup globals
+global.Tournaments = require('./tournaments');
 global.Tools = require('./tools.js');
 global.toId = Tools.toId;
 
