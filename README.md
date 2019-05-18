@@ -14,6 +14,11 @@ Or it can be used the other way found
 
 ### -pokemon
 -pokemon is a simple but useful command that uses html to show some information about the pokemon specified. It will show four sprites of the Pokemon (front, back, shiny front, shiny back), then 3 helpful links about the Pokemon. It will then show the stats and everything about the pokemon via !dt.
+
+### -dice
+Pretty self-explanatory but it's just rolling some normal dice.
+
+
 # Credits
 
 [@BaneOfAll - Commands, Owner](https://github.com/BaneOfAll)
