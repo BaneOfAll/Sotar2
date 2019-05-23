@@ -1,0 +1,19 @@
+{
+  "id": "tourleaderboards",
+  "name": "Tour Leaderboards",
+  "main": "main.js",
+  "commands": [
+    "commands.js"
+  ],
+  "handlers": [
+    "server-handler.js"
+  ],
+  "permissions": {
+	"tourofficial": {"group": "mod"},
+	"toursrank": {"group": "driver"}
+  },
+  "langfiles": [
+    "./commands.translations"
+  ],
+  "description": "Tournament leaderboards for chat rooms"
+}

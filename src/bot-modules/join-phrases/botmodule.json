@@ -1,0 +1,18 @@
+{
+  "id": "joinphrases",
+  "name": "Join-Phrases",
+  "main": "main.js",
+  "commands": [
+    "commands.js"
+  ],
+  "permissions": {
+	"joinphrases": {"group": "owner"}
+  },
+  "handlers": [
+    "server-handler.js"
+  ],
+  "langfiles": [
+    "./commands.translations"
+  ],
+  "description": "Phrases to be sent when an user joins a room"
+}

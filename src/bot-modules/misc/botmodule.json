@@ -1,0 +1,19 @@
+{
+  "id": "misc",
+  "name": "Misc",
+  "commands": [
+    "misc.js"
+  ],
+  "permissions": {
+	"regdate": {"group": "voice"},
+	"randomanswer": {"group": "voice"},
+	"random": {"group": "voice"},
+	"randpoke": {"group": "voice"}
+  },
+  "langfiles": [
+    "./commands/fun.translations",
+	"./commands/randomanswer.translations",
+	"./commands/regdate.translations"
+  ],
+  "description": "Misc Commands Plugins"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "autoinvite",
+  "name": "Auto-Invite",
+  "main": "main.js",
+  "commands": [],
+  "handlers": [
+    "server-handler.js"
+  ],
+  "description": "Automatically sends /invite to auth of a private room"
+}

@@ -1,0 +1,11 @@
+﻿# Translations File
+
+@ moderation-filter-spam
+
+%english
+
+$spam = Spam
+
+%spanish
+
+$spam = Spam

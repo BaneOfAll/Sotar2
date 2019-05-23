@@ -1,0 +1,11 @@
+{
+  "id": "chatlogger",
+  "name": "Chat Logger",
+  "main": "chat-logger.js",
+  "commands": [],
+  "handlers": [
+    "handlers/logs-config.js",
+	"handlers/logs-view.js"
+  ],
+  "description": "Logs Chat Rooms"
+}

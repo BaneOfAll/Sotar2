@@ -1,0 +1,27 @@
+﻿# Translations File
+
+@ timers-main
+
+%english
+
+$second = second
+$seconds = seconds
+$minute = minute
+$minutes = minutes
+
+$0 = 
+$1 = left!
+$2 = Time is up!
+$3 = 
+
+%spanish
+
+$second = segundo
+$seconds = segundos
+$minute = minuto
+$minutes = minutos
+
+$0 = Quedan
+$1 = 
+$2 = ¡El tiempo ha terminado!
+$3 = Queda

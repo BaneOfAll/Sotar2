@@ -1,0 +1,20 @@
+{
+  "id": "blacklist",
+  "name": "BlackList",
+  "main": "main.js",
+  "commands": [
+    "commands.js"
+  ],
+  "permissions": {
+	"blacklist": {"group": "owner"},
+	"viewblacklist": {"group": "owner"}
+  },
+  "handlers": [
+    "server-handler.js"
+  ],
+  "langfiles": [
+    "./commands.translations",
+	"./blacklist.translations"
+  ],
+  "description": "An user blacklist for chat rooms"
+}
