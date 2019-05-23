@@ -1,0 +1,25 @@
+﻿# Command Parser translations for Showdown ChatBot
+# Showdown ChatBot is distributed under the terms of the MIT License
+# (https://github.com/asanrom/Showdown-ChatBot/blob/master/LICENSE)
+
+@ command-usage-shared
+
+%english
+
+$user = user
+$room = room
+$command = command
+$subcmd = sub-command
+$text = text
+$rank = rank
+$message = message
+
+%spanish
+
+$user = usuario
+$room = sala
+$command = comando
+$subcmd = sub-comando
+$text = texto
+$rank = rango
+$message = mensaje

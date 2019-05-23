@@ -1,0 +1,29 @@
+﻿# Command Parser translations
+# Showdown ChatBot is distributed under the terms of the MIT License
+# (https://github.com/asanrom/Showdown-ChatBot/blob/master/LICENSE)
+
+@ command-parser
+
+%english
+
+# Access Denied
+$0 = Access denied. You need the permission ${PERM} to use this command.
+
+# Usage
+$3 = Usage
+
+# Dyn Cmd Options
+$4 = Unknown option
+$5 = Options for command
+
+%spanish
+
+# Access Denied
+$0 = Acceso Denegado. Necesitas el permiso ${PERM} para usar este comando.
+
+# Usage
+$3 = Uso del Comando
+
+# Dyn Cmd Options
+$4 = Opción desconocida
+$5 = Opciones para el comando

@@ -1,0 +1,16 @@
+{
+  "id": "timers",
+  "name": "Timers",
+  "main": "main.js",
+  "commands": [
+    "commands.js"
+  ],
+  "permissions": {
+	"timer": {"group": "driver"}
+  },
+  "langfiles": [
+    "./commands.translations",
+	"./timers.translations"
+  ],
+  "description": "Timeout commands for chat rooms"
+}

@@ -1,39 +1,39 @@
 {
-	"name": "universal_backup",
-	"description": "Bot for the Mafia room on Pokemon Showdown written in NodeJS",
-	"version": "0.0.1",
-	"license": "MIT",
-	"private": true,
-	"engines": {
-		"node": ">=8.0.0"
-	},
-	"scripts": {
-		"start": "node app.js",
-		"test": "eslint --cache .",
-		"prepush": "npm test"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/HoeenCoder/Universal-Backup.git"
-	},
-	"author": {
-		"name": "HoeenHero"
-	},
-	"contributors": [
-		{
-			"name": "Jumbowhales"
-		}
-	],
-	"dependencies": {
-		"@types/cheerio": "^0.22.10",
-		"@types/websocket": "0.0.40",
-		"cheerio": "^1.0.0-rc.2",
-		"websocket": "^1.0.26"
-	},
-	"devDependencies": {
-		"@types/node": "^10.5.7",
-		"eslint": "^4.16.0",
-		"husky": "^0.14.3",
-		"typescript": "3.0.1"
-	}
+  "name": "Eaubot",
+  "version": "1.8.1-beta",
+  "author": {
+    "name": "Distrib",
+    "email": "Delhay70@gmail.com",
+    "url": "https://github.com/PokelandServer"
+  },
+  "scripts": {
+    "start": "node run-forever",
+    "test": "eslint --cache showdown-chatbot config-example.js src/",
+    "fix-test": "eslint --fix --cache showdown-chatbot config-example.js src/"
+  },
+  "main": "showdown-chatbot",
+  "bin": "showdown-chatbot",
+  "engines": {
+    "node": "> 4.0.0"
+  },
+  "dependencies": {
+    "sockjs-client": "1.1.4",
+    "busboy": "0.2.14"
+  },
+  "optionalDependencies": {
+    "websocket": "1.0.23",
+    "githubhook": "1.6.1",
+    "mysql": "2.12.0"
+  },
+  "description": "Bot for Pokemon Showdown",
+  "homepage": "https://github.com/PokelandServer/Eaubot/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PokelandServer/Eaubot.git"
+  },
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "4.1.1"
+  }
 }

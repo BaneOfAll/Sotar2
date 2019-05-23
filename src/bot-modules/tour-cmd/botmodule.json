@@ -1,0 +1,20 @@
+{
+  "id": "tourcmd",
+  "name": "Tour Command",
+  "main": "main.js",
+  "commands": [
+    "commands.js"
+  ],
+  "handlers": [
+    "server-handler.js"
+  ],
+  "permissions": {
+	"tour": {"group": "mod"}
+  },
+  "langfiles": [
+    "./commands.translations",
+    "./tournaments.translations",
+	"./errors.translations"
+  ],
+  "description": "A single command to make a tour, start it and set the autodq"
+}

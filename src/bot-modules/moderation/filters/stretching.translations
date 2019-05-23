@@ -1,0 +1,11 @@
+﻿# Translations File
+
+@ moderation-filter-stretch
+
+%english
+
+$stretch = Stretching
+
+%spanish
+
+$stretch = Alargar demasiado las palabras

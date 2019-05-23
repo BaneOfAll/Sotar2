@@ -1,0 +1,21 @@
+{
+  "id": "quote",
+  "name": "Quotes & Jokes",
+  "main": "main.js",
+  "commands": [
+    "commands.js"
+  ],
+  "handlers": [
+    "server-handler.js"
+  ],
+  "permissions": {
+	"quote": {"group": "driver"},
+	"joke": {"group": "driver"},
+	"editquote": {"group": "admin"},
+	"editjoke": {"group": "admin"}
+  },
+  "langfiles": [
+    "./commands.translations"
+  ],
+  "description": "A database of quotes and jokes"
+}

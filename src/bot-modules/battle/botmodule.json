@@ -1,0 +1,20 @@
+{
+  "id": "battle",
+  "name": "Battle",
+  "main": "main.js",
+  "commands": [
+     "commands.js"
+  ],
+  "permissions": {
+	"chall": {"group": "admin"},
+	"searchbattle": {"group": "admin"}
+  },
+  "handlers": [
+    "server-handler.js"
+  ],
+  "langfiles": [
+    "./commands.translations",
+	"./ladder.translations"
+  ],
+  "description": "Automated battle bot for ladder, challenges and tournaments"
+}

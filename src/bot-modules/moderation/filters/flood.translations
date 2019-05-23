@@ -1,0 +1,11 @@
+﻿# Translations File
+
+@ moderation-filter-flood
+
+%english
+
+$flood = Flooding
+
+%spanish
+
+$flood = Flood

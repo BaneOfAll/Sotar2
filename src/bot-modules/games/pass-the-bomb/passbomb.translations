@@ -1,0 +1,49 @@
+﻿# Translations File
+
+@ games-passbomb
+
+%english
+
+$lose2 = was disqualified for trying to pass the bomb when did not have it
+
+$11 = The Pass-The-Bomb game ended!
+$12 = Congratulations to
+$13 = for winning the game!
+
+$init = A new game of Pass-The-Bomb was created!
+$init2 = Use
+$init3 = to participate and
+$init4 = to start the game
+$noplayers = There are not enough players participating in this game
+$round = is handed the bomb!
+$players = Players
+$help = Use
+$help2 = [user]
+$help3 = to pass the bomb to another player
+$lose = got eliminated!
+$forceend = The Pass-The-Bomb game was terminated!
+
+$starterr = There are not enough players to start the game
+
+%spanish
+
+$lose2 = fue descalificado por tratar de pasar la bomba cuando no la tenía
+
+$11 = ¡El juego de Pass-The-Bomb ha terminado!
+$12 = ¡Felicidades a
+$13 = por ganar el juego!
+
+$init = ¡Se ha iniciado un juego de Pass-The-Bomb!
+$init2 = Usa
+$init3 = para participar y
+$init4 = para iniciar el juego
+$noplayers = No hay suficientes jugadores participando en este juego
+$round = tiene la bomba!
+$players = Jugadores
+$help = Usa 
+$help2 = [usuario]
+$help3 = para pasar la bomba a otro jugador
+$lose = fue eliminado!
+$forceend = ¡El juego de Pass-The-Bomb ha sido finalizado!
+
+$starterr = No hay suficientes jugadores para iniciar el juego

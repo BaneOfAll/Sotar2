@@ -1,0 +1,11 @@
+﻿# Translations File
+
+@ moderation-filter-caps
+
+%english
+
+$caps = Caps
+
+%spanish
+
+$caps = Uso excesivo de las mayúsculas

@@ -1,0 +1,16 @@
+{
+  "id": "github",
+  "name": "GitHub Dev Bot",
+  "main": "main.js",
+  "commands": ["commands.js"],
+  "handlers": [
+    "server-handler.js"
+  ],
+  "permissions": {
+    "gitban": {"group": "admin"}
+  },
+  "langfiles": [
+    "./commands.translations"
+  ],
+  "description": "Provides notifications of repositories updates"
+}
