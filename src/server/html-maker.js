@@ -8,7 +8,7 @@
 const Util = require('util');
 
 /**
- * Generates a dynamic webpage for Showdown ChatBot
+ * Generates a dynamic webpage for Sotar2
  * @param {String} body
  * @param {Object} loginData - Options: name {String}, group {String}, invalid {Boolean}
  * @param {Array<Object>} menu - Menu Option: url {String}, name {String}, selected {Boolean}
@@ -113,7 +113,7 @@ exports.generate = function (body, loginData, menu, options) {
 		buf += '<div align="center" class="maindiv">';
 		buf += '<div align="center" class="copyright">';
 		buf += '<i>This is a Pokemon Showdown Bot for Node JS - ';
-		buf += '<a href="' + options.package.homepage + '" target="_blank">Showdown-ChatBot' + '</a> v' + options.package.version;
+		buf += '<a href="https://github.com/BaneOfAll/Sotar2" target="_blank">Sotar2' + '</a> v' + options.package.version;
 		buf += '</i></div></div>';
 	}
 	buf += '</div></body>';
