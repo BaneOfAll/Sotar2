@@ -1,4 +1,4 @@
-Showdown ChatBot
+Sotar2
 ====================
 
 [Pokemon Showdown](https://github.com/Zarel/Pokemon-Showdown) bot written for [Node JS](http://nodejs.org/) with a toon of features often useful for chat rooms like automated moderation, blacklist, customizable help / information commands, games, tournament tools and chat logs. All of those features can be configured with a web control panel that does not require any programming knowledge to be used.
@@ -28,18 +28,18 @@ Features
 Installation
 ------------
 
-Showdown ChatBot requires [node.js](http://nodejs.org/) to run. Install version 4.0.0 or newer (recommended to install the lastest stable version to avoid bugs).
+Sotar2 requires [node.js](http://nodejs.org/) to run. Install version 4.0.0 or newer (recommended to install the lastest stable version to avoid bugs).
 
 Install [Git](https://git-scm.com/) if you do not have it.
 
 Open a terminal / console and clone this repository with the following command:
 ```
-git clone https://github.com/PokelandServer/Eaubot.git Eaubot
+git clone https://github.com/BaneOfAll/Sotar2.git sotar2
 ```
 
 If you have an old version of Showdown-ChatBot and you want to update it,  use `cd` to reach the directory of the bot and run:
 ```
-git pull https://github.com/PokelandServer/Eaubot.git
+git pull https://github.com/BaneOfAll/Sotar2.git
 ```
 
 Use `cd` to reach the directory of the bot and run the following command to install dependencies:
@@ -63,7 +63,7 @@ Add-ons are like optional modules you can install for your bot. They are rather 
 Contributing
 ------------
 
- - [Contributing guidelines](https://github.com/PokelandServer/Eaubot/blob/master/CONTRIBUTING.md)
+ - [Contributing guidelines](https://github.com/BaneOfAll/Sotar2/blob/master/CONTRIBUTING.md)
 
 Lisense
 ------------
