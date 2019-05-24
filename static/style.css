@@ -17,7 +17,8 @@ p {
 	width:90%;
 	background-color:gold;
 	margin-bottom:10px;
-	border: 1px solid blue;
+	border: 5px solid blue;
+	border-radius: 10px
 }
 
 .home-link {
