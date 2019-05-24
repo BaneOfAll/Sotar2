@@ -1,7 +1,7 @@
 /* Css File */
 
 body {
-	background-color:#FFFFFF;
+	background-color:#FF0000;
 }
 
 td {
@@ -15,9 +15,9 @@ p {
 
 .maindiv {
 	width:90%;
-	background-color:#F8FBFD;
+	background-color:gold;
 	margin-bottom:10px;
-	border: 1px solid #BBCCDD;
+	border: 1px solid blue;
 }
 
 .home-link {
