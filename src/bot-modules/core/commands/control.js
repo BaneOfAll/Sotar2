@@ -76,7 +76,7 @@ module.exports = {
 	},
    gc: function() {
 this.reply('/makegroupchat ' + this.arg, this.targetRoom);
-this.reply('/invite zeruora', 'groupchat-arandobot-' + this.arg)
+this.send('/invite zeruora')
    },
 	send: function () {
 		this.setLangFile(Lang_File);
