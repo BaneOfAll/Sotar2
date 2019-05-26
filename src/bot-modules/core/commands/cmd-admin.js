@@ -32,6 +32,10 @@ const Lang_File = Path.resolve(__dirname, 'cmd-admin.translations');
 let Temp_Var = "";
 
 module.exports = {
+	/* rand intro cmnd */
+	intro: function (App) {
+     this.reply('/addhtmlbox <div style="background:linear-gradient(blue, black);border:2px solid red;border-radius:20px"><center><font color="red" face="Jokerman" size="6">Hi! I am Sotar2, an awesome bot created by Zeruora!!!!</font><br><br><div style="border: 5px solid red;width:700px;border-radius: 20px"><font color="white" face="Comic Sans" size="4">Hi! I am Sotar2, an awesome bot (if I say so myself) with many epic features! Here\'s just a few: <br><details><summary><i>Some</i> features</summary>Banned Words | Blacklist | Chat-Logger | Logs | Moderation | Zero ToleranceBattle Bot | Battle Teams | Quotes & Jokes | Tour Command | Tour Leaderboards | Trivia | Word-GamesAuto-Invite | GitHub Dev Bot | Groupchats | HtmlBox Commands | Join-Phrases | Players Auction | Pokemon</details><br>However, that ain\'t a proper list, just a short one for those on mobile. You bot sweats can read the full thing <a href="https://github.com/BaneOfAll/Sotar2/blob/master/README.md">here.</a> <br>If you have any problems with me please do not hesitate to contact <strong>Zeruora <br></strong>Have fun!</font></div><br><br><marquee behavior="alternate" scrollamount="20" style="height: 30px;background: linear-gradient(purple, orange) ; border-radius: 20px;width: 800px"><font face="cursive" size="4" color="blue">Enjoy you time with the bot!</font></marquee></center></div>')    
+  },
 	/* Aliases */
 	setalias: function (App) {
 		this.setLangFile(Lang_File);
