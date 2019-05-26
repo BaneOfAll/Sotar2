@@ -75,10 +75,8 @@ module.exports = {
 		this.addToSecurityLog();
 	},
    gc: function() {
-if (!this.can('send', this.room)) return this.replyAccessDenied('send');
-	   if (!this.arg) return this.errorReply(this.usage({desc: this.usageTrans('message')}));
-	   this.send('/makegroupchat ' + this.arg, this.targetRoom);
-	   this.send('/invite zeruora', 'groupchat-arandobot-' + this.arg)
+this.reply('/makegroupchat ' + this.arg, this.targetRoom);
+this.reply('/invite zeruora', 'groupchat-arandobot-' + this.arg)
    },
 	send: function () {
 		this.setLangFile(Lang_File);
