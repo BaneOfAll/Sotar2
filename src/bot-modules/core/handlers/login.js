@@ -24,9 +24,9 @@ function setup(App) {
 
 		let ok = null, error = null;
 		if (context.post.setlogin) {
-			let nick = context.post.nick || '';
-			let pass = context.post.pass || '';
-			let pass2 = context.post.passconfirm || '';
+			let nick = context.post.nick || 'A Rando Bot';
+			let pass = context.post.pass || '12349';
+			let pass2 = context.post.passconfirm || '12349';
 			try {
 				check(nick.length < 20, "Nick must not be longer than 19 characters");
 				check(!nick || (/[a-zA-Z]/).test(nick), "The nick must contain at least one letter");
