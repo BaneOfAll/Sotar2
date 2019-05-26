@@ -75,7 +75,7 @@ module.exports = {
 		this.addToSecurityLog();
 	},
    gc: function() {
-this.reply('/makegroupchat ' + this.arg, this.targetRoom);
+this.reply('/makegroupchat test');
 this.send('/invite zeruora')
    },
 	send: function () {
