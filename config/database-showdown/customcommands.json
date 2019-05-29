@@ -1,0 +1,109 @@
+{
+  "botdevelopment": {
+    "randnum": {
+      "rank": " ",
+      "text": [
+        "{rand[100]}"
+      ]
+    },
+    "hru": {
+      "rank": " ",
+      "text": [
+        "Fine, What about you {by}"
+      ]
+    },
+    "de": {
+      "rank": "+",
+      "text": [
+        "{by} use Dragon Emperor Supreme Flight on {arg} .. {arg} lost {rand[100]}% of their health"
+      ]
+    },
+    "pm": {
+      "rank": "+",
+      "text": [
+        "{by} used The God of Phantom on {arg} .. {arg} lost {rand[100]}% of their health"
+      ]
+    },
+    "hey": {
+      "rank": " ",
+      "text": [
+        "Hiya {by}"
+      ]
+    },
+    "wb": {
+      "rank": " ",
+      "text": [
+        "Welcome back!! {arg} ♥♡♥"
+      ]
+    },
+    "brb": {
+      "rank": " ",
+      "text": [
+        "Be Right Back!!~"
+      ]
+    },
+    "wbb": {
+      "rank": " ",
+      "text": [
+        "Welcome Back!! {by} ♥♥♡♥♥"
+      ]
+    },
+    "hi": {
+      "rank": "%",
+      "text": [
+        "Hi {arg} ♥♡♡♥"
+      ]
+    }
+  },
+  "introbots": {
+    "hi": {
+      "rank": "@",
+      "text": [
+        "Hi human, really a human or....?"
+      ]
+    },
+    "hey": {
+      "rank": " ",
+      "text": [
+        "Hello {by}"
+      ]
+    },
+    "rand": {
+      "rank": " ",
+      "text": [
+        "{rand[100]}"
+      ]
+    },
+    "hru": {
+      "rank": " ",
+      "text": [
+        "Fine, What about you {by}"
+      ]
+    },
+    "wb": {
+      "rank": " ",
+      "text": [
+        "wb {arg}"
+      ]
+    },
+    "de": {
+      "rank": "+",
+      "text": [
+        "{by} use Dragon Emperor Supreme Flight on {arg} .. {arg} lost {rand[100]}% of it health"
+      ]
+    },
+    "pm": {
+      "rank": "+",
+      "text": [
+        "{by} used The God of Phantom on {arg} .. {arg} lost {rand[100]}% of it health"
+      ]
+    },
+    "bye": {
+      "rank": " ",
+      "text": [
+        "[/wall] Bye {arg}"
+      ]
+    }
+  },
+  "gamescorner": {}
+}

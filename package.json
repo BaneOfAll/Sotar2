@@ -1,39 +1,32 @@
 {
-  "name": "Eaubot",
-  "version": "1.8.1-beta",
-  "author": {
-    "name": "Distrib",
-    "email": "Delhay70@gmail.com",
-    "url": "https://github.com/PokelandServer"
-  },
-  "scripts": {
-    "start": "node run-forever",
-    "test": "eslint --cache showdown-chatbot config-example.js src/",
-    "fix-test": "eslint --fix --cache showdown-chatbot config-example.js src/"
-  },
-  "main": "showdown-chatbot",
-  "bin": "showdown-chatbot",
-  "engines": {
-    "node": "> 4.0.0"
-  },
+  "name": "Cerberus-E",
+  "version": "1.0.0",
   "dependencies": {
-    "sockjs-client": "1.1.4",
-    "busboy": "0.2.14"
+    "sugar": "2.0.4",
+    "websocket": "^1.0.26",
+    "colors": "^1.3.0",
+    "es6-shim": "0.35.3",
+    "origindb": "^2.6.1",
+    "graceful-fs": "^4.1.11",
+    "js-beautify": "^1.7.5",
+    "skyweb": "^0.4.1",
+    "express": "^4.16.3"
   },
-  "optionalDependencies": {
-    "websocket": "1.0.23",
-    "githubhook": "1.6.1",
-    "mysql": "2.12.0"
+  "engines": {
+    "node": "> 8.0.0"
   },
-  "description": "Bot for Pokemon Showdown",
-  "homepage": "https://github.com/PokelandServer/Eaubot/",
+  "engineStrict": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "bin": "./app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PokelandServer/Eaubot.git"
+    "url": "https://github.com/PowerHitter0418/Cerberus-E.git"
   },
-  "private": true,
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "4.1.1"
-  }
+  "author": {
+    "name": "Ishaan Shaikh",
+    "email": "ishaan0132@gmail.com"
+  },
+  "private": true
 }
