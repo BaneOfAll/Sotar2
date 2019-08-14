@@ -27,10 +27,10 @@ Config.Data_Mode = "RAW";
 
 Config.MYSQL = {};
 
-Config.MYSQL.host = "lightvoid.psim.us";
+Config.MYSQL.host = "";
 
-Config.MYSQL.user = " ARandoBot";
+Config.MYSQL.user = "";
 
-Config.MYSQL.password = "12349";
+Config.MYSQL.password = "";
 
 Config.MYSQL.database = "";
